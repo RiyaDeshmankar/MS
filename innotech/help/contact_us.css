@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5c4033;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-contact li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5c4033;
+    color: #fff;
+    font-size: 14px;
+}

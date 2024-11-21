@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindspace Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section with Logo and Navigation Links -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Mindspace Logo" />
+            <h1>Mindspace</h1>
+        </div>
+        <nav>
+            <a href="http://127.0.0.1:5500/home%20page/index.html">Home</a>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- News Section -->
+        <h2>Latest News on Mental Health</h2>
+        <div class="news-section" id="newsSection">
+            <div class="news-item">
+                <img src="a.jpg" alt="News 1">
+                <h3>How Stress Impacts Students</h3>
+            </div>
+            <div class="news-item">
+                <img src="covid-article.png" alt="News 2">
+                <h3>Covid-19 Effects on Mental health</h3>
+            </div>
+            <div class="news-item">
+                <img src="b.webp" alt="News 3">
+                <h3>Student Suicides</h3>
+            </div>
+            <div class="news-item">
+                <img src="c.jpeg" alt="News 4">
+                <h3>Importance of Mental Health in Education</h3>
+            </div>
+            <div class="news-item">
+                <img src="d.webp" alt="News 5">
+                <h3>Pressure of IIT Among Students</h3>
+            </div>
+        </div>
+
+        <!-- Blogs Section -->
+        <h2>Expert Blogs</h2>
+        <div class="expert-blogs">
+            <div class="expert-blog">
+                <img src="resilence.jpg" alt="Expert Blog 1">
+                <h3>Building Resilience in Students</h3>
+                <p>Mental health is a crucial aspect of a student's well-being, yet it is often overlooked. The pressures of academic performance, social life, and future expectations can lead to stress, anxiety, and other mental health challenges. It's essential for students to recognize the importance of mental well-being and seek support when needed. Engaging in self-care practices, connecting with peers, and accessing professional help can significantly improve mental health. By fostering an open and supportive environment, students can feel empowered to prioritize their mental well-being and achieve a healthy balance in their lives.</p>
+            </div>
+            <div class="expert-blog">
+                <img src="mindfulness.webp" alt="Expert Blog 2">
+                <h3>Mindfulness Techniques</h3>
+                <p>Mindfulness techniques are powerful tools for improving mental health, particularly for students who face the pressures of academics and personal life. Mindfulness involves paying attention to the present moment without judgment, helping to reduce stress and increase emotional well-being. Some effective mindfulness techniques include:
+                    <br>
+                    1.Breathing exercises: Focused breathing, such as deep belly breathing or the 4-7-8 technique, helps activate the body’s relaxation response, reducing anxiety and improving concentration.
+                    <br>
+                    2.Body scan: This technique involves mentally scanning your body from head to toe, noticing any tension or discomfort. It helps in becoming more aware of physical sensations and promotes relaxation.
+                    <br>
+                    3.Mindful meditation: A practice where you sit in a quiet space and focus on your breath or a specific thought. This can help clear your mind, calm anxiety, and improve focus.
+                    <br>
+                    4.Mindful walking: Taking a walk while being fully present, noticing the sensations of your feet touching the ground and the surrounding environment, can help release stress and ground you in the moment.
+                    <br>
+                    5.Gratitude journaling: Writing down three things you’re grateful for each day helps shift the focus from negative thoughts to positive experiences, fostering a sense of contentment.
+                    <br>
+                    These mindfulness techniques, when practiced regularly, can significantly enhance emotional resilience, reduce stress, and improve overall well-being. They help students stay focused, manage their emotions, and build a healthier relationship with their thoughts.</p>
+            </div>
+            <div class="expert-blog">
+                <img src="time-management-tips.png" alt="Expert Blog 3">
+                <h3>Time Management Tips</h3>
+                <p>Effective time management helps students stay organized, reduce stress, and improve productivity. Here are some quick tips:
+
+                    1.Set Clear Goals: Break down tasks into achievable steps.<br>
+                    2.Prioritize: Focus on urgent and important tasks first.<br>
+                    3.Use a Planner: Track deadlines and commitments.<br>
+                    4.Time Blocking: Dedicate specific times for tasks.<br>
+                    5.Avoid Multitasking: Focus on one task at a time.<br>
+                    6.Establish a Routine: Stick to a daily schedule.<br>
+                    7.Use the Pomodoro Technique: Work in focused 25-minute intervals with breaks.<br>
+                    8.Eliminate Distractions: Minimize distractions like social media.<br>
+                    9.Take Care of Your Health: Sleep, exercise, and eat well to stay energized.<br>
+                    These tips can help students manage their time effectively and maintain a healthy work-life balance</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Automatic horizontal scrolling for the news section
+        const newsSection = document.getElementById('newsSection');
+        let scrollAmount = 0;
+
+        function autoScroll() {
+            scrollAmount += 1;
+            if (scrollAmount >= newsSection.scrollWidth - newsSection.offsetWidth) {
+                scrollAmount = 0; // Reset to the beginning
+            }
+            newsSection.scrollLeft = scrollAmount;
+        }
+
+        setInterval(autoScroll, 50); // Adjust speed by modifying the interval
+    </script>
+</body>
+</html>

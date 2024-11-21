@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f1ea; /* Light brown background */
+    color: #4a2c2a; /* Dark brown text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8c5e3c; /* Darker brown header */
+    padding: 1rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.about-us {
+    margin-bottom: 30px;
+}
+
+.about-us h2 {
+    color: #8c5e3c; /* Dark brown for section title */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    color: #4a2c2a; /* Dark brown text */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.creators {
+    margin-top: 40px;
+}
+
+.creators h2 {
+    color: #8c5e3c; /* Dark brown for section title */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.creator-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.creator-card {
+    padding: 20px;
+    border: 1px solid #d4b89c; /* Light brown border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fdf2e9; /* Light brown background for cards */
+    flex: 1;
+}
+
+.creator-card h3 {
+    color: #8c5e3c; /* Dark brown color for creator names */
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.creator-card p {
+    color: #4a2c2a; /* Dark brown text for descriptions */
+    font-size: 1rem;
+}

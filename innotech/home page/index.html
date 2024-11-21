@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindSpace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="images/imagess.png" alt="MindSpace Logo" class="logo">
+            <span class="site-name">MINDSPACE</span>
+        </div>
+        <ul class="navbar-right">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/calmatives/index.html" class="nav-link">Calmative</a></li>
+            <li><a href="http://127.0.0.1:5500/blog/blog.html" class="nav-link">Blog</a></li>
+            <li><a href="http://127.0.0.1:5500/about/index.html" class="nav-link">About Us</a></li>
+            <li><a href="http://127.0.0.1:5500/help/index.html" class="nav-link">Help</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-left">
+            <img src="images/giphy.webp" alt="line art" class="hero">
+        </div>
+        <div class="hero-right">
+            <h1 class="hero-caption">Your Safe Space to Share and Heal</h1>
+            <p class="hero-description">
+                MindSpace connects students anonymously to share their stresses, find support, 
+                and explore mental wellness through interactive tools and professional resources.
+            </p>
+        </div>
+    </section>
+
+    <div class="quote-slider" id="quote-slider">
+        <div class="quote-slide">
+          <p class="quote-text">"The only way to do great work is to love what you do."</p>
+          <p class="quote-author">- Steve Jobs</p>
+        </div>
+        <div class="quote-slide">
+          <p class="quote-text">"Your mental health is a priority. Your happiness is an essential."</p>
+          <p class="quote-author">- Anonymous</p>
+        </div>
+        <div class="quote-slide">
+          <p class="quote-text">"Keep going. Everything you need will come to you at the perfect time."</p>
+          <p class="quote-author">- Unknown</p>
+        </div>
+        <div class="quote-navigation">
+          <button class="nav-arrow left-arrow" id="left-arrow">&#10094;</button>
+          <div class="pagination-dots" id="pagination-dots"></div>
+          <button class="nav-arrow right-arrow" id="right-arrow">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="therapist-section">
+        <h2>Meet Our Therapists</h2>
+        <div class="therapist-grid">
+          <!-- Therapist Card -->
+          <div class="therapist-card" onclick="openTherapistModal(0)">
+            <img src="images/images.jpeg" alt="Therapist 1">
+            <h3>Dr. Sarah Lee</h3>
+            <p>Specialist in Cognitive Behavioral Therapy</p>
+          </div>
+          <div class="therapist-card" onclick="openTherapistModal(1)">
+            <img src="images/doc.jpeg" alt="Therapist 2">
+            <h3>John Doe</h3>
+            <p>Expert in Adolescent Counseling</p>
+          </div>
+          <div class="therapist-card" onclick="openTherapistModal(2)">
+            <img src="images/download (1).jpeg" alt="Therapist 3">
+            <h3>Emily Carter</h3>
+            <p>Focus on Stress and Anxiety Management</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Therapist Modal -->
+      <div id="therapist-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeTherapistModal()">&times;</span>
+          <img id="modal-img" src="" alt="Therapist">
+          <h3 id="modal-name"></h3>
+          <p id="modal-specialty"></p>
+          <p id="modal-bio"></p>
+        </div>
+      </div>
+      
+      <div class="domain-section">
+        <h2>Explore Domains</h2>
+        <p>Find support in the following areas:</p>
+        <div class="domain-container">
+          <!-- Domain 1 -->
+          <div class="domain-item">
+            <img src="images/download (2).png" alt="Mental Health">
+            <h3>Mental Health and Emotional Well-being</h3>
+            <p>Connect with peers and professionals for mental health support.</p>
+            <button onclick="window.location.href='/mental-health';">Explore</button>
+          </div>
+          <!-- Domain 2 -->
+          <div class="domain-item">
+            <img src="images/download.png" alt="Stress Management">
+            <h3>Academic Challenges </h3>
+            <p>Learn strategies to handle stress, especially during exams and deadlines.</p>
+            <button onclick="window.location.href='/stress-management';">Explore</button>
+          </div>
+          <!-- Domain 3 -->
+          <div class="domain-item">
+            <img src="images/download (1).png" alt="Anxiety">
+            <h3>Time Management and Productivity</h3>
+            <p>Find support for managing time and how to utilize it.</p>
+            <button onclick="window.location.href='/anxiety';">Explore</button>
+          </div>
+          <!-- Domain 4 -->
+          <div class="domain-item">
+            <img src="images/images.png" alt="Relationships">
+            <h3>Career and Future Planning</h3>
+            <p>Get help with guidance for Future.</p>
+            <button onclick="window.location.href='/relationships';">Explore</button>
+          </div>
+              <!-- Domain 5 -->
+              <div class="domain-item">
+                <img src="images/download (2).jpeg" alt="Health">
+                <h3>Physical Health Concerns  </h3>
+                <p>Find support for managing health and exercises to keep yourself fit .</p>
+                <button onclick="window.location.href='/anxiety';">Explore</button>
+              </div>
+                  <!-- Domain 6 -->
+          <div class="domain-item">
+            <img src="images/download (3).png" alt="Finance">
+            <h3>Financial and Resource Struggles </h3>
+            <p>Get help in how to be financially independent.</p>
+            <button onclick="window.location.href='/anxiety';">Explore</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="features-section" id="features">
+        <h2>Features of Mind Space</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <img src="images/3220587.webp" alt="Mindfulness Tools Icon" />
+            <h3>Personalized Mindfulness Tools</h3>
+            <p>
+              Access customized mindfulness exercises, including guided meditations and breathing techniques, tailored to your needs.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="images/360_F_884677224_hEWAHPRkMwH9yq5ong0dW8lFw2agVRAP-Photoroom.png" alt="Calm Zone Icon" />
+            <h3>Calm Zone</h3>
+            <p>
+              Step into the Calm Zone for relaxing sounds, soothing visuals, and interactive tools to help ease your mind instantly.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="https://img.icons8.com/color/64/000000/online-support.png" alt="Expert Advice Icon" />
+            <h3>Expert Advice and Sessions</h3>
+            <p>
+              Schedule sessions with certified mental health professionals or browse expert advice tailored for students.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="https://img.icons8.com/color/64/000000/user-shield.png" alt="Anonymous Sharing Icon" />
+            <h3>Anonymous Sharing</h3>
+            <p>
+              Share your feelings and experiences anonymously to find comfort and support without fear of judgment.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="https://img.icons8.com/color/64/000000/group.png" alt="Peer Support Icon" />
+            <h3>Anonymous Peer Support</h3>
+            <p>
+              Connect with like-minded peers anonymously for shared experiences, advice, and emotional support.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="https://img.icons8.com/color/64/000000/rules.png" alt="Community Guidelines Icon" />
+            <h3>Community Guidelines Enforcement</h3>
+            <p>
+              A safe space moderated with strict guidelines to ensure a respectful and inclusive environment for everyone.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="images/2371511.webp" alt="Screenshot" />
+            <h3>No screenshot policy</h3>
+            <p>
+              A safe space moderated with strict guidelines to ensure a safe and secure environment for everyone.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="images/exclamation-mark-bubble-report-icon-long-shadow-report-warning-button-exclamation-mark-bubble-report-icon-long-shadow-325922350-Photoroom.png" alt="Report" />
+            <h3>Report the disturbing being</h3>
+            <p>
+              You can block and report the person disturbing you.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="feedback-section" id="user-feedback">
+        <h2>User Feedback</h2>
+        <div class="feedback-list">
+          <!-- Predefined Reviews -->
+          <div class="feedback-card">
+            <div class="quote-icon">“</div>
+            <p class="feedback-text">I'm calm again and no longer feel like I'm struggling to breathe.</p>
+          </div>
+          <div class="feedback-card">
+            <div class="quote-icon">“</div>
+            <p class="feedback-text">The community is very good, especially the moderator I got. I do feel a lot lighter now.</p>
+          </div>
+          <div class="feedback-card">
+            <div class="quote-icon">“</div>
+            <p class="feedback-text">I feel more supported and acknowledged about how I feel.</p>
+          </div>
+          <div class="feedback-card">
+            <div class="quote-icon">“</div>
+            <p class="feedback-text">It feels nice to tell people about my thoughts and feelings. I will be returning. :D</p>
+          </div>
+          <div class="feedback-card">
+            <div class="quote-icon">“</div>
+            <p class="feedback-text">This is my first time on this website and it was better than I expected. I genuinely am leaving with a smile on my face and a lighter heart.</p>
+          </div>
+          <!-- Add more feedback cards as needed -->
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination">
+          <span class="page-number active">1</span>
+          <span class="page-number">2</span>
+          <span class="page-number">3</span>
+          <span class="next-arrow">›</span>
+        </div>
+      </div>
+      
+      <div class="review-submission" id="submit-review">
+        <h2>Submit Your Review</h2>
+        <form id="reviewForm">
+      
+          <div class="form-group">
+            <label for="reviewText">Your Review:</label>
+            <textarea id="reviewText" name="reviewText" rows="5" placeholder="Write your thoughts here..." required></textarea>
+          </div>
+      
+          <div class="form-group">
+            <label for="starRating">Rate Us:</label>
+            <div class="star-rating">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <input type="hidden" id="rating" name="rating" value="0" required>
+          </div>
+      
+          <button type="submit" class="submit-button">Submit Review</button>
+        </form>
+        <p id="successMessage" class="success-message"></p>
+      </div>
+      
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo and Site Name -->
+          <div class="footer-logo">
+            <img src="logo.png" alt="Mind Space Logo" class="logo" />
+            <span class="site-name">Mind Space</span>
+          </div>
+      
+          <!-- Footer Links -->
+          <div class="footer-links">
+            <a href="http://127.0.0.1:5500/community/index.html" class="footer-link">Community Guidelines</a>
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+            <a href="join-our-team.html" class="footer-link">Join Our Team</a>
+          </div>
+      
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <a href="#" class="social-icon" title="Instagram">
+              <img src="images/ig-Photoroom.png" alt="Instagram">
+            </a>
+            <a href="#" class="social-icon" title="Discord">
+              <img src="images/dis-Photoroom.png" alt="Discord">
+            </a>
+            <a href="#" class="social-icon" title="LinkedIn">
+              <img src="images/linked.png" alt="LinkedIn">
+            </a>
+            <a href="#" class="social-icon" title="Twitter">
+              <img src="images/twit-Photoroom.png" alt="Twitter">
+            </a>
+          </div>
+        </div>
+      
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+          <p>© 2024 Mind Space. All rights reserved.</p>
+          <p>Your privacy and anonymity are our top priorities.</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
